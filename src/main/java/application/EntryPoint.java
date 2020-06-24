@@ -3,8 +3,12 @@ package application;
 public class EntryPoint {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Anagrammer myAnagrammer = new Anagrammer();
+		
+		String toAnagram = args[0];
+		
+		System.out.println("Anagrams for : " + toAnagram);
+		System.out.println(myAnagrammer.computeAnagramsFromString(toAnagram , ""));
 	}
 
 }
